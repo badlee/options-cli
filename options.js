@@ -231,7 +231,7 @@ function options(schema,opt){
                                 code : 0
                         }
                     }else{
-                        console.log("ds",opt.dbg);
+                        console.log(opt.dbg);
                             process.exit(0);
                         }
                 }
