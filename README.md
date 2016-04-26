@@ -17,16 +17,19 @@ Expects the "schema" array with options definitions and produces the
 "options" object and the "arguments" array, which will contain all
 non-option arguments encountered (including the script name and such).
 
-Syntax:
+**Syntax:**
+
     [«short», «long», «attributes», «brief», [«callback»],[«error»]]
 
-Attributes:
+**Attributes:**
+
     ! - option is mandatory;
     : - option expects a parameter;
     + - option may be specified multiple times (repeatable).
     val1,val2,val3,val4,...valN - list of possible value
 
-Notes:
+**Notes:**
+
     - Parser is case-sensitive.
     - The '-?|--help' option is provided implicitly.
     - Parsed options are placed as fields in the "options" object.
@@ -62,16 +65,16 @@ Notes:
 ```
 ## OPTIONS
 ----------
-Option is a object with this properties :
+**Option is a object with this properties :**
     
-    - "onArgs" : (default: new Function) [callback]  Valid arguments ,
-    - "exit" : (default: true) [Boolean] True : print error and exit; False : return error object,
-    - "args" : (default: '--') [String] label for argument value,
-    - "script" : (default: "«script»") [String] Name of script,
-    - "strict" : (default false) [Boolean] Show error on unknow argument
-    - "help" : (default: "") [String] text of extra help ,
-    - "desc" : (default: "") [String] text of description of script,
-    - "values" : (default: "«values»") [String] text of value argument in help
+    - onArgs : (default: new Function) [callback]  Valid arguments ,
+    - exit : (default: true) [Boolean] True : print error and exit; False : return error object,
+    - args : (default: '--') [String] label for argument value,
+    - script : (default: "«script»") [String] Name of script,
+    - strict : (default false) [Boolean] Show error on unknow argument
+    - help : (default: "") [String] text of extra help ,
+    - desc : (default: "") [String] text of description of script,
+    - values : (default: "«values»") [String] text of value argument in help
 
         
 ```JS    
@@ -90,7 +93,7 @@ var options = {
 
 # REAL EXEMPLE
 
-filename `script.js`
+**filename** `script.js`
 ```JS
 var options = require("options-cli")([
 		['p', 'port', ':', "Port d'ecoute du serveur." ],
@@ -127,7 +130,7 @@ server.listen(options.port || 1337, options.host || '127.0.0.1', () => {
 }); 
 ```
 
-execution `$ script.js -p 80 -h 192.168.1.1`
+**execution** `$ script.js -p 80 -h 192.168.1.1`
 
 Copyright 2011 Badlee Oshimin. All rights reserved.
 Released as Public Domain.
