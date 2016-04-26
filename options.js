@@ -232,11 +232,11 @@ function options(schema,opt){
                         }
                     }else{
                         console.log(opt.dbg);
-                            process.exit(0);
-                        }
+                        process.exit(0);
+                    }
                 }
                 opt.log(e);
-                opt.log("Use  the '-?|--help' option for usage details.");
+                opt.log("Use  the -? or --help option for usage details.");
                 if(!opt.exit){
                 return {
                         error : opt.dbg,
