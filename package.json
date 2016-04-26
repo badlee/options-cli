@@ -1,0 +1,34 @@
+{
+  "name": "options-cli",
+  "version": "1.5.2",
+  "description": "Nodejs Command-line option parser.",
+  "main": "options.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badlee/options-cli.git"
+  },
+  "keywords": [
+    "getopt",
+    "flags",
+    "flag",
+    "parser",
+    "option",
+    "line",
+    "command",
+    "command-line",
+    "options",
+    "cli",
+    "options-line",
+    "args",
+    "arguments"
+  ],
+  "author": "Badinga Ulrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/badlee/options-cli/issues"
+  },
+  "homepage": "https://github.com/badlee/options-cli#readme"
+}
